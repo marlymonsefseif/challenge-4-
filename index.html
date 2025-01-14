@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Intro component with sign up form</title>
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="section1">
+      <h1>Learn to code by watching others</h1>
+      <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great,
+        but understanding how developers think is invaluable.
+      </p>
+    </div>
+    <div class="section2">
+      <div class="free">
+        <p><b>Try it free 7 days</b> then $20/mo. thereafter</p>
+      </div>
+      <div class="form">
+        <form id="form" action="home.html">
+          <input type="text" id="fname" name="firstname" placeholder="First Name">
+          <span class="errorIcon"><i class="fa-solid fa-circle-exclamation"></i></span>
+          <h5 id="errorFName" class="error"></h5>
+          <input type="text" id="lname" name="lastname" placeholder="Last Name">
+          <span class="errorIcon"><i class="fa-solid fa-circle-exclamation"></i></span>
+          <h5 id="errorLName" class="error"></h5>
+          <input type="text" id="email" name="email" placeholder="Email Address">
+          <span class="errorIcon"><i class="fa-solid fa-circle-exclamation"></i></span>
+          <h5 id="errorEmail" class="error"></h5>
+          <input type="password" id="pass" name="password" placeholder="Password">
+          <span class="errorIcon"><i class="fa-solid fa-circle-exclamation"></i></span>
+          <h5 id="errorPass" class="error"></h5>
+          <button id="btn" onclick="validationForm(event)">CLAIM YOUR FREE TRIAL </button>
+        </form>
+        <div class="end">
+          <p>By clicking the button, you are agreeing to our <span
+              style="color: rgb(247, 53, 53);font-weight:400;">Terms and Services</span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
