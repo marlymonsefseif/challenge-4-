@@ -74,6 +74,7 @@ body {
 }
 
 input {
+    position: relative;
     width: 100%;
     padding: 15px 20px;
     margin-bottom: 0.5em;
@@ -82,12 +83,10 @@ input {
 }
 
 .errorIcon {
-    position: absolute;
-    color: var(--bg);
-    font-size: 20px;
     visibility: hidden;
-    top: 50%;
-    right: 15px;
+    position: absolute;
+    right: 20%;
+    margin-top: 0.75em; 
 }
 
 input:focus {
